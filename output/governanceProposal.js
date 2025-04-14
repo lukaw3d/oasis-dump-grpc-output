@@ -21,3 +21,21 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ id: 1,
+  state: 2,
+  content:
+   { upgrade:
+      { v: 1,
+        epoch: 8049,
+        target:
+         { consensus_protocol: { major: 4 },
+           runtime_host_protocol: { major: 3 },
+           runtime_committee_protocol: { major: 2 } },
+        handler: 'consensus-params-update-2021-08' } },
+  deposit: '10,000.0',
+  results: { as_Map: [ [ 1, '4,080,181,483.52859476' ] ] },
+  closes_at: 7876,
+  submitter: 'oasis1qpydpeyjrneq20kh2jz2809lew6d9p64yymutlee',
+  created_at: 7708,
+  invalid_votes: 2 }

@@ -21,3 +21,5 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ general: { nonce: 84, balance: '23.465628679' } }

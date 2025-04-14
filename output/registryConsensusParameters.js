@@ -10,3 +10,19 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ gas_costs:
+   { register_node: 1000,
+     unfreeze_node: 1000,
+     prove_freshness: 1000,
+     register_entity: 1000,
+     register_runtime: 1000,
+     deregister_entity: 1000,
+     runtime_epoch_maintenance: 1000 },
+  tee_features:
+   { sgx: { pcs: true, max_attestation_age: 1200, signed_attestations: true },
+     freshness_proofs: true },
+  enable_km_churp: true,
+  max_node_expiration: 2,
+  max_runtime_deployments: 5,
+  enable_runtime_governance_models: { as_Map: [ [ 1, true ], [ 2, true ] ] } }

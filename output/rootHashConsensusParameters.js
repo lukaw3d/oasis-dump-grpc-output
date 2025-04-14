@@ -10,3 +10,14 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ gas_costs:
+   { evidence: 5000,
+     submit_msg: 1000,
+     merge_commit: 10000,
+     compute_commit: 10000,
+     proposer_timeout: 5000 },
+  max_evidence_age: 100,
+  max_runtime_messages: 256,
+  max_past_roots_stored: 1200,
+  max_in_runtime_messages: 128 }

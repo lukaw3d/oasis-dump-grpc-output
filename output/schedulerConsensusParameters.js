@@ -10,3 +10,8 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ max_validators: 120,
+  min_validators: 30,
+  max_validators_per_entity: 1,
+  reward_factor_epoch_election_any: {} }

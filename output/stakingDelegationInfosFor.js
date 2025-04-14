@@ -21,3 +21,8 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ as_Map:
+   [ [ 'oasis1qpn83e8hm3gdhvpfv66xj3qsetkj3ulmkugmmxn3',
+       { pool: { balance: '119,768,161.632965402', total_shares: '84,050,580.719436217' },
+         shares: '71.939343766' } ] ] }

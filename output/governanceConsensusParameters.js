@@ -10,3 +10,13 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ gas_costs: { cast_vote: 1000, submit_proposal: 1000 },
+  voting_period: 168,
+  stake_threshold: 68,
+  min_proposal_deposit: '10,000.0',
+  upgrade_min_epoch_diff: 336,
+  allow_proposal_metadata: true,
+  allow_vote_without_entity: true,
+  upgrade_cancel_min_epoch_diff: 192,
+  enable_change_parameters_proposal: true }

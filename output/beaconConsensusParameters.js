@@ -10,3 +10,10 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+{ backend: 'vrf',
+  vrf_parameters:
+   { interval: 600,
+     gas_costs: { vrf_prove: 1000 },
+     proof_delay: 400,
+     alpha_hq_threshold: 20 } }

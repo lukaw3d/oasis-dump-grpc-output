@@ -10,3 +10,5 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+'oasis1qpagy9xw56u0fdnx4l8dv5agpq5yp4ydjgew7dje or ad26829e0ee308eaf40dbfa0d6cbf7042cb4058f6c7f6cbd8b7d6a885f43580c'

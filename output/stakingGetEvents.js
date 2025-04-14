@@ -10,3 +10,5 @@ try {
 } catch (err) {
   console.log('error', err)
 }
+const output = 
+'null'
