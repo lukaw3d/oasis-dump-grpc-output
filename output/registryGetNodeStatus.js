@@ -16,10 +16,10 @@ try {
       beneficiary: oasis.staking.addressFromBech32('oasis1qz78ap0456g2rk7j6rmtvasc9v2kjhz2s58qgj90' /* my mainnet dev addr */),
       address: oasis.staking.addressFromBech32('oasis1qq3xrq0urs8qcffhvmhfhz4p0mu7ewc8rscnlwxe' /* stakefish */),
       include_suspended: true,
-      id: 1,
+      id: oasis.misc.fromBase64('SQZZd1wsWXdFsqswUoh6hZtmzu+ejuSnrGeHtgIBJDo=' /* stakefish */),
     }))
 } catch (err) {
   console.log('error', err)
 }
 const output =
-error
+{ freeze_end_time: 0, expiration_processed: false, election_eligible_after: 31259 }
