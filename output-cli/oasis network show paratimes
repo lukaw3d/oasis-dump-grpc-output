@@ -1,0 +1,759 @@
+$ oasis network show paratimes
+{
+  "v": 3,
+  "id": "4000000000000000000000000000000000000000000000008c5ea5e49b4bc9ac",
+  "entity_id": "TAv9qXjV4yBphnKLJcNkzois1TLoYUjaRPrMfY58Apo=",
+  "genesis": {
+    "state_root": "c672b8d1ef56ed28ab87c3622c5114069bdd3ad7b8f9737498d0c01ecef0967a",
+    "round": 0
+  },
+  "kind": 2,
+  "tee_hardware": 1,
+  "executor": {
+    "group_size": 0,
+    "group_backup_size": 0,
+    "allowed_stragglers": 0,
+    "round_timeout": 0,
+    "max_messages": 0
+  },
+  "txn_scheduler": {},
+  "storage": {
+    "checkpoint_interval": 0,
+    "checkpoint_num_kept": 0,
+    "checkpoint_chunk_size": 0
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "70K0o8zDkrDL1ciDOlXcErh2ABKnwJbNlUn0HOMIo/k=": {},
+        "C+AdYzxJqd/CCYw1CXNTOSClV0wMoIaLj4RUHMviTQ0=": {},
+        "PQzldKR19zm2H2vvcr6gZppQkuE+19AE2HdlMLvs3Us=": {},
+        "RlM7AQBuDeE7iLQcOG1lpFmp2MfwGa/UdzTytIMSM64=": {},
+        "W3dPidk7Q+NVS6Q/248eS5K2IXpSbM6oQVXA6Kcxiao=": {},
+        "peLVyam58BHuhrsPoBZXnfCOA6FjRHsTtPz2h6ExIL8=": {},
+        "zTaXae6g9SX3WE2PCZtJnXYTxGtWQM/bw7abXQymNkQ=": {}
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {
+        "minor": 4,
+        "patch": 1
+      },
+      "valid_from": 28060,
+      "tee": "oWhlbmNsYXZlc4GiaW1yX3NpZ25lclggQCXat+vaH77MTjY3YG4CEhTQ9BxtBCL9N4sqi4iBhFlqbXJfZW5jbGF2ZVggVPj2c7BnO40G0WLfubhbhnfmHtJxHvFRiNPCAiEd0MU="
+    },
+    {
+      "version": {
+        "minor": 5
+      },
+      "valid_from": 32381,
+      "tee": "oWhlbmNsYXZlc4GiaW1yX3NpZ25lclggQCXat+vaH77MTjY3YG4CEhTQ9BxtBCL9N4sqi4iBhFlqbXJfZW5jbGF2ZVggrVEQYd+Ku5DWqPDQExIdRpexWQNX5quc2lTiCRUI38M="
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000f80306c9858e7279",
+  "entity_id": "TAv9qXjV4yBphnKLJcNkzois1TLoYUjaRPrMfY58Apo=",
+  "genesis": {
+    "state_root": "c672b8d1ef56ed28ab87c3622c5114069bdd3ad7b8f9737498d0c01ecef0967a",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 1,
+  "key_manager": "4000000000000000000000000000000000000000000000008c5ea5e49b4bc9ac",
+  "executor": {
+    "group_size": 10,
+    "group_backup_size": 15,
+    "allowed_stragglers": 4,
+    "round_timeout": 2,
+    "max_messages": 256,
+    "min_live_rounds_eval": 60,
+    "max_liveness_fails": 4
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 1000,
+    "max_batch_size_bytes": 1048576,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 100000,
+    "checkpoint_num_kept": 2,
+    "checkpoint_chunk_size": 8388608
+  },
+  "admission_policy": {
+    "per_role": {
+      "observer": {
+        "entity_whitelist": {
+          "entities": {
+            "15NByf2quI0o7ldl9BGy7j92+r8/e5FHHwRyICTUPqk=": {},
+            "OeAJI+Y7ynLs7ot8jwbEGOchzDjr9pcwQLQUVz9NUtQ=": {},
+            "YRqBqdrawpfdN3ZptHuy4XWFV/Dh9XgYquknoIdybkc=": {},
+            "iI2dc2DXWw80o+NdwTRljB66o3JU13EHDlS/kb7Q/n0=": {},
+            "lNP9aBGQdabqC3q4k7S7j5Fc7CABBR9+dEJscv6jg4Y=": {}
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "validator_set": {},
+        "max_nodes": {
+          "limit": 1
+        },
+        "min_pool_size": {
+          "limit": 15
+        }
+      },
+      "worker": {
+        "validator_set": {},
+        "max_nodes": {
+          "limit": 1
+        },
+        "min_pool_size": {
+          "limit": 15
+        }
+      }
+    }
+  },
+  "staking": {
+    "thresholds": {
+      "node-compute": "5000000000000000"
+    },
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {
+        "minor": 8,
+        "patch": 2
+      },
+      "valid_from": 35191,
+      "tee": "pGF2AWZwb2xpY3miY2lhc6FoZGlzYWJsZWT1Y3Bjc6NvZm1zcGNfYmxhY2tsaXN0jGwwMDkwNkVBNTAwMDBsMDA3MDZFNDcwMDAwbDAwODA2RUE2MDAwMGwwMDcwNkE4MDAwMDBsMDA3MDZBMTAwMDAwbDAwODA2RUI3MDAwMGwwMDkwNkVDNTAwMDBsMDA5MDZFQzEwMDAwbDAwQTA2NTUxMDAwMGwyMDgwNkVCNzAwMDBsMjA5MDZFQzEwMDAwbDAwOTA2RUIxMDAwMHN0Y2JfdmFsaWRpdHlfcGVyaW9kGB54Hm1pbl90Y2JfZXZhbHVhdGlvbl9kYXRhX251bWJlchFoZW5jbGF2ZXOBomltcl9zaWduZXJYIEAl2rfr2h++zE42N2BuAhIU0PQcbQQi/TeLKouIgYRZam1yX2VuY2xhdmVYIBb+NYe5qE+o3c41B4xqvxuvgsYSikQmcxMiMIkpOl3+c21heF9hdHRlc3RhdGlvbl9hZ2UZBLA=",
+      "bundle_checksum": "5SOQPkgKi+98rxi4Rq76oXkTh4tn7uE6xhiEndC7h0E="
+    },
+    {
+      "version": {
+        "minor": 9,
+        "patch": 2
+      },
+      "valid_from": 39606,
+      "tee": "pGF2AWZwb2xpY3miY2lhc6FoZGlzYWJsZWT1Y3Bjc6NvZm1zcGNfYmxhY2tsaXN0jGwwMDkwNkVBNTAwMDBsMDA3MDZFNDcwMDAwbDAwODA2RUE2MDAwMGwwMDcwNkE4MDAwMDBsMDA3MDZBMTAwMDAwbDAwODA2RUI3MDAwMGwwMDkwNkVDNTAwMDBsMDA5MDZFQzEwMDAwbDAwQTA2NTUxMDAwMGwyMDgwNkVCNzAwMDBsMjA5MDZFQzEwMDAwbDAwOTA2RUIxMDAwMHN0Y2JfdmFsaWRpdHlfcGVyaW9kGB54Hm1pbl90Y2JfZXZhbHVhdGlvbl9kYXRhX251bWJlchJoZW5jbGF2ZXOBomltcl9zaWduZXJYIH0KOzLhM3Bu1nV66bOi9LPtUe6IrCKp+Gx7iPOx2V/oam1yX2VuY2xhdmVYIMh1F9w7+PZvxlVnibrGSUFpJ07nOLg8eP7TV4mqO1dxc21heF9hdHRlc3RhdGlvbl9hZ2UZBLA=",
+      "bundle_checksum": "kbH/i1zJ9qmel76cafItc9deA3uLvKf9pkp6QbyZeEE="
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000e2eaa99fc008f87f",
+  "entity_id": "TAv9qXjV4yBphnKLJcNkzois1TLoYUjaRPrMfY58Apo=",
+  "genesis": {
+    "state_root": "c672b8d1ef56ed28ab87c3622c5114069bdd3ad7b8f9737498d0c01ecef0967a",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 10,
+    "group_backup_size": 30,
+    "allowed_stragglers": 1,
+    "round_timeout": 2,
+    "max_messages": 256,
+    "min_live_rounds_percent": 50,
+    "min_live_rounds_eval": 10,
+    "max_liveness_fails": 4
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 1000,
+    "max_batch_size_bytes": 1048576,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 100000,
+    "checkpoint_num_kept": 2,
+    "checkpoint_chunk_size": 8388608
+  },
+  "admission_policy": {
+    "any_node": {}
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "validator_set": {},
+        "max_nodes": {
+          "limit": 1
+        },
+        "min_pool_size": {
+          "limit": 30
+        }
+      },
+      "worker": {
+        "validator_set": {},
+        "max_nodes": {
+          "limit": 1
+        },
+        "min_pool_size": {
+          "limit": 30
+        }
+      }
+    }
+  },
+  "staking": {
+    "thresholds": {
+      "node-compute": "5000000000000000"
+    },
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {
+        "major": 10
+      },
+      "valid_from": 21437
+    },
+    {
+      "version": {
+        "major": 11
+      },
+      "valid_from": 28017
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000e199119c992377cb",
+  "entity_id": "TAv9qXjV4yBphnKLJcNkzois1TLoYUjaRPrMfY58Apo=",
+  "genesis": {
+    "state_root": "c672b8d1ef56ed28ab87c3622c5114069bdd3ad7b8f9737498d0c01ecef0967a",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 1,
+  "key_manager": "4000000000000000000000000000000000000000000000008c5ea5e49b4bc9ac",
+  "executor": {
+    "group_size": 5,
+    "group_backup_size": 11,
+    "allowed_stragglers": 1,
+    "round_timeout": 2,
+    "max_messages": 256
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 1000,
+    "max_batch_size_bytes": 10485760,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 100000,
+    "checkpoint_num_kept": 2,
+    "checkpoint_chunk_size": 8388608
+  },
+  "admission_policy": {
+    "per_role": {
+      "observer": {
+        "entity_whitelist": {
+          "entities": {
+            "OeAJI+Y7ynLs7ot8jwbEGOchzDjr9pcwQLQUVz9NUtQ=": {}
+          }
+        }
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "validator_set": {},
+        "max_nodes": {
+          "limit": 1
+        },
+        "min_pool_size": {
+          "limit": 11
+        }
+      },
+      "worker": {
+        "validator_set": {},
+        "max_nodes": {
+          "limit": 1
+        },
+        "min_pool_size": {
+          "limit": 11
+        }
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {
+        "major": 3,
+        "minor": 1,
+        "patch": 2
+      },
+      "valid_from": 35187,
+      "tee": "pGF2AWZwb2xpY3miY2lhc6FoZGlzYWJsZWT1Y3Bjc6NvZm1zcGNfYmxhY2tsaXN0jGwwMDkwNkVBNTAwMDBsMDA3MDZFNDcwMDAwbDAwODA2RUE2MDAwMGwwMDcwNkE4MDAwMDBsMDA3MDZBMTAwMDAwbDAwODA2RUI3MDAwMGwwMDkwNkVDNTAwMDBsMDA5MDZFQzEwMDAwbDAwQTA2NTUxMDAwMGwyMDgwNkVCNzAwMDBsMjA5MDZFQzEwMDAwbDAwOTA2RUIxMDAwMHN0Y2JfdmFsaWRpdHlfcGVyaW9kGB54Hm1pbl90Y2JfZXZhbHVhdGlvbl9kYXRhX251bWJlchFoZW5jbGF2ZXOBomltcl9zaWduZXJYIEAl2rfr2h++zE42N2BuAhIU0PQcbQQi/TeLKouIgYRZam1yX2VuY2xhdmVYIDcmRie7CPPl2zt0Ez08Vvmn43lEsrYmipZauWYNiqIAc21heF9hdHRlc3RhdGlvbl9hZ2UZBLA=",
+      "bundle_checksum": "IA9fvIotT+z+YheT6+/YUdF6MyzCFQ8L4/mTuTfFLIE="
+    },
+    {
+      "version": {
+        "major": 3,
+        "minor": 2,
+        "patch": 2
+      },
+      "valid_from": 39604,
+      "tee": "pGF2AWZwb2xpY3miY2lhc6FoZGlzYWJsZWT1Y3Bjc6NvZm1zcGNfYmxhY2tsaXN0jGwwMDkwNkVBNTAwMDBsMDA3MDZFNDcwMDAwbDAwODA2RUE2MDAwMGwwMDcwNkE4MDAwMDBsMDA3MDZBMTAwMDAwbDAwODA2RUI3MDAwMGwwMDkwNkVDNTAwMDBsMDA5MDZFQzEwMDAwbDAwQTA2NTUxMDAwMGwyMDgwNkVCNzAwMDBsMjA5MDZFQzEwMDAwbDAwOTA2RUIxMDAwMHN0Y2JfdmFsaWRpdHlfcGVyaW9kGB54Hm1pbl90Y2JfZXZhbHVhdGlvbl9kYXRhX251bWJlchJoZW5jbGF2ZXOBomltcl9zaWduZXJYIKWr5ey0Ugb2waJ17zvsPzvQLdADcFSADhrr8k1+sb4zam1yX2VuY2xhdmVYIAA5TZoIj78Ny9nY4R1pZhG0xt3+O0e7vgwwywm5x+WOc21heF9hdHRlc3RhdGlvbl9hZ2UZBLA=",
+      "bundle_checksum": "5lPZ/AzJUM4BjcEbNq3nK1/DItcOeFAVSaieYO0i3tA="
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000000000000000ff03",
+  "entity_id": "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=",
+  "genesis": {
+    "state_root": "273c8f17e319b489233544c05a2c4ae817166801e3529164406b556ab99d7752",
+    "round": 43825
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 2,
+    "group_backup_size": 0,
+    "allowed_stragglers": 0,
+    "round_timeout": 5,
+    "max_messages": 32
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 10000,
+    "max_batch_size_bytes": 16777216,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 1000,
+    "checkpoint_num_kept": 5,
+    "checkpoint_chunk_size": 16777216
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "OtnnPxG9U1V4ieDWCuqBsr4BziYAmw6IpFBpa3CpKPE=": {},
+        "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=": {},
+        "UC0Aaa2Czc25G5+X2HOio6H0wQuBJR550chCE2kieN0=": {}
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "min_pool_size": {
+          "limit": 0
+        }
+      },
+      "worker": {
+        "min_pool_size": {
+          "limit": 2
+        }
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {},
+      "valid_from": 0
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000000000000000ff04",
+  "entity_id": "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=",
+  "genesis": {
+    "state_root": "17a96b3a636d82f1faece3f70ba4a466b522e74dc2093f23f63c05358b7439c9",
+    "round": 44848
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 2,
+    "group_backup_size": 0,
+    "allowed_stragglers": 0,
+    "round_timeout": 5,
+    "max_messages": 32
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 10000,
+    "max_batch_size_bytes": 16777216,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 1000,
+    "checkpoint_num_kept": 5,
+    "checkpoint_chunk_size": 16777216
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "/Foi5kZdBc70HPmlguvY6AzBILNrNiPDgKQLOITuIEI=": {},
+        "/ylWdaid2DDlI4BMVkX6gAR6eaBYlLolHbjCmHitrzc=": {},
+        "32KS5Z9LWTD2UEUOqhRwZyJvb0lb12iiE9UYgoFjsKQ=": {},
+        "3DRMMM7ye2HREvk8zz06OjMG6BuWjs84PLdSYChNHAw=": {},
+        "3NKMT/Qz11e2xklwSCV/zeawLE3BIO/Rn4LfaV47QJI=": {},
+        "4gbOOU09bcyvM53Up1lTnP+sLb0feniJu0OcUUPCBSs=": {},
+        "7DwKCCQV9THNLyTELQTBCWNPIHZJdAq7qGk1D7vx2zo=": {},
+        "9+lM5vQ1g+cVzjaNM78gxw1yUegVj57tHDbpN7DKIvw=": {},
+        "BBba0XfI4WSTroE+/YGcFthxbEC5jQJhWhl0jIBwke0=": {},
+        "BTAJNDyd6/UQ+pfhTDdPGsothzJ+C5/C/g52a3DIlMw=": {},
+        "C7he7BJPrgVrsGRm4m+OFcHlcNYOEPSGeerxvV/BsBA=": {},
+        "DIbPacWGEiealk+226eYEafYmKJpD98PYoWp/tcPXJI=": {},
+        "F5eduX4m4O/ot3UcFs3iQk1ZPUuG43kuxGI9sZz95uU=": {},
+        "FDqRmM1FyhaGas+lquWmGAKgMsU2rj7UESAlnOHtxco=": {},
+        "GDWO0+R7qSrWB0bvT+V2Kz6vlHcm6ZnaNQM2/FsFqEA=": {},
+        "J2nwlXuYEPNZ0mMH2Phg5RofbZzj65xDvQMNdy9Ji0E=": {},
+        "J3ou5m1abrwcbYwTksSj1Hj21QoDjyrSkjB40rEKV4E=": {},
+        "KmMS+RzjQ9vm9J2aX9YihJnmmSc/IBquCysbhPxVDFM=": {},
+        "LaKJUKndAqH57DVExspTjdRTRNGJOSqArzM0pm8REZw=": {},
+        "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=": {},
+        "RZowTXmfT+b6H6Vuz97VECIy2cq8tytTilv8AxbtvO8=": {},
+        "T5k7PtOR01oZrdnZveDpO9AFpMUhEREZk7WSSfm8Gtg=": {},
+        "UC0Aaa2Czc25G5+X2HOio6H0wQuBJR550chCE2kieN0=": {},
+        "UFXCpcvXBOHbxtObG4psGcn+LgZOedvDDUAqVengpPk=": {},
+        "UkwjS1YvEfHx9b6MMT5Q1WvCY3aWn2lxRDsB/Pw+zGk=": {},
+        "VsrHPScBde1FUb+BDWONvLxxwKOKevLB7FRbUAaiF+Y=": {},
+        "Vt63FfFzNMgUngrMvnKks+icySi5LwkjniJEJMZAimM=": {},
+        "WXs7ElBlm30la2fG4oZDpubeFu5sKkjDVeflWo+YuIA=": {},
+        "WazI78lMcmjyCH5+5RKkkfOTUR+XheHIohlqMu+a9As=": {},
+        "WqBX+RyP1S8WsCuxrkwk1KUEqpPxkMSYyvl0rjL+NCo=": {},
+        "Y+ve+O0hlBco/1YzuFODIn7Jo3D5c9BOqduhc7KZM8E=": {},
+        "YDHYz/R+Y7pCodhmgkCqzoqqN54gzRfVE5fjZriX+RI=": {},
+        "aOefxt5MUuXEbErxpD+ZttJWh/3d9if+t+PBTeAgKpo=": {},
+        "bTok0el8GbmUzTAAgcQ78uww/TsgeWwXpM3N2S49qBQ=": {},
+        "bb1zWp0gzS1ij1OY3KzxC0BJNdqkAiJ26z3iD8slt7c=": {},
+        "izy38AmUeU4b4L23kVy4BlxbkHGOPy4KPSSLnJglrV0=": {},
+        "jzTWYikeN6NIuMQ6l4iqdDOF9jyfOJG2FcnQaNBn9+s=": {},
+        "kfr2A6K6TlvhQm4nz88Hczzkd2Aq5PlkxSpnmUUBAFs=": {},
+        "ko5wr5SMqhKb+P1kimM1EF/T4SqvW/WjSOwPHigQl+k=": {},
+        "kupW3Pt0XMeERSkdDWyZMU4oZrk0wGysVXVyqX3rylc=": {},
+        "oPekghIahmyMUzB31IFbXQd6DKdo7lnOYsXIppK2IWU=": {},
+        "sDi9ZxHYB+rHTpVh4abNFXDMRSecfGe4QzbyGK8ZgQg=": {},
+        "tcon38rBr3dHmURuXOTUFpDPKwE4eOU82F121rX9esE=": {},
+        "trheWccoAX4yy4FVnTBdt4u83GGHbgWs1gy6OBifClc=": {},
+        "tvPlmGHv5aokL9MMBqNAkSOygldJIlRTmSIvCwuh0rU=": {},
+        "uxSkvFu6x4MIYV+M1VrDu3m/qbADs/1Ae3mWAcEmnaQ=": {},
+        "xQN6ffLSdc51EfEQ2BzltK1iWYAw6Y1CkBAbFzlhhEQ=": {},
+        "zAhtGrpk1L3bBLaP5enm3natUTCoj7MEFryq9+MG4tE=": {}
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "min_pool_size": {
+          "limit": 0
+        }
+      },
+      "worker": {
+        "min_pool_size": {
+          "limit": 2
+        }
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {},
+      "valid_from": 0
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000000000000000ff01",
+  "entity_id": "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=",
+  "genesis": {
+    "state_root": "8c78e9cdab19943d90717e3c7d47c939f71ab615bfb413bba858b775fee22acc",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 2,
+    "group_backup_size": 0,
+    "allowed_stragglers": 0,
+    "round_timeout": 5,
+    "max_messages": 32
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 10000,
+    "max_batch_size_bytes": 16777216,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 1000,
+    "checkpoint_num_kept": 5,
+    "checkpoint_chunk_size": 16777216
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "21+iPu/omYBN7X5cUY4QnD4b9VVuAiW/u8uABqt2VjM=": {},
+        "3DRMMM7ye2HREvk8zz06OjMG6BuWjs84PLdSYChNHAw=": {},
+        "4g2p36WoOzdHyXq6tOjFb3nv6y90/zyQcb1eQcy5doo=": {},
+        "4gbOOU09bcyvM53Up1lTnP+sLb0feniJu0OcUUPCBSs=": {},
+        "BBba0XfI4WSTroE+/YGcFthxbEC5jQJhWhl0jIBwke0=": {},
+        "BTAJNDyd6/UQ+pfhTDdPGsothzJ+C5/C/g52a3DIlMw=": {},
+        "C7he7BJPrgVrsGRm4m+OFcHlcNYOEPSGeerxvV/BsBA=": {},
+        "D8oCKJab4LtOMQJR0YQZXx+fMw6QHyTiv3YCfN8tM18=": {},
+        "DIbPacWGEiealk+226eYEafYmKJpD98PYoWp/tcPXJI=": {},
+        "DVovm7tdUXlFm9m8BP00H2vg/AklgC2SHIomgq0AOdo=": {},
+        "DcplOZzEDthLHtPyjbtn9nldfzZ5b9r8EJFnD3JTGMI=": {},
+        "F5eduX4m4O/ot3UcFs3iQk1ZPUuG43kuxGI9sZz95uU=": {},
+        "J2nwlXuYEPNZ0mMH2Phg5RofbZzj65xDvQMNdy9Ji0E=": {},
+        "LaKJUKndAqH57DVExspTjdRTRNGJOSqArzM0pm8REZw=": {},
+        "NlnPkaqEH8+5We5bdBGHWybZsKpKNo3nLjWgn0JMxoY=": {},
+        "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=": {},
+        "RZowTXmfT+b6H6Vuz97VECIy2cq8tytTilv8AxbtvO8=": {},
+        "T5k7PtOR01oZrdnZveDpO9AFpMUhEREZk7WSSfm8Gtg=": {},
+        "UC0Aaa2Czc25G5+X2HOio6H0wQuBJR550chCE2kieN0=": {},
+        "UFXCpcvXBOHbxtObG4psGcn+LgZOedvDDUAqVengpPk=": {},
+        "UkwjS1YvEfHx9b6MMT5Q1WvCY3aWn2lxRDsB/Pw+zGk=": {},
+        "VsrHPScBde1FUb+BDWONvLxxwKOKevLB7FRbUAaiF+Y=": {},
+        "WXs7ElBlm30la2fG4oZDpubeFu5sKkjDVeflWo+YuIA=": {},
+        "WazI78lMcmjyCH5+5RKkkfOTUR+XheHIohlqMu+a9As=": {},
+        "WqBX+RyP1S8WsCuxrkwk1KUEqpPxkMSYyvl0rjL+NCo=": {},
+        "XSQLBoubhOq/X86vKIj4Xzouo1Fhe39+kLF/2PDgKpM=": {},
+        "Y+ve+O0hlBco/1YzuFODIn7Jo3D5c9BOqduhc7KZM8E=": {},
+        "a/LVFfoI3aRoasZs6tP/Lvn0CbG6RkvEFYHcVR/Vo9M=": {},
+        "cxB3USCkM0ACAMQZtoYWUrKSm4iI9ll8t3yY1Mr1E6c=": {},
+        "eaffKG9BfI5jiWJfq5aFT8ELxRo8o3/gCem51kicOSM=": {},
+        "izy38AmUeU4b4L23kVy4BlxbkHGOPy4KPSSLnJglrV0=": {},
+        "kfr2A6K6TlvhQm4nz88Hczzkd2Aq5PlkxSpnmUUBAFs=": {},
+        "ko5wr5SMqhKb+P1kimM1EF/T4SqvW/WjSOwPHigQl+k=": {},
+        "kupW3Pt0XMeERSkdDWyZMU4oZrk0wGysVXVyqX3rylc=": {},
+        "oT3L7RJVJ7k2dBEGfVAP8/mdE3zoim4D61POvlySQs8=": {},
+        "sDi9ZxHYB+rHTpVh4abNFXDMRSecfGe4QzbyGK8ZgQg=": {},
+        "tcon38rBr3dHmURuXOTUFpDPKwE4eOU82F121rX9esE=": {},
+        "trheWccoAX4yy4FVnTBdt4u83GGHbgWs1gy6OBifClc=": {},
+        "tvPlmGHv5aokL9MMBqNAkSOygldJIlRTmSIvCwuh0rU=": {},
+        "uxSkvFu6x4MIYV+M1VrDu3m/qbADs/1Ae3mWAcEmnaQ=": {},
+        "xQN6ffLSdc51EfEQ2BzltK1iWYAw6Y1CkBAbFzlhhEQ=": {},
+        "zAhtGrpk1L3bBLaP5enm3natUTCoj7MEFryq9+MG4tE=": {}
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "min_pool_size": {
+          "limit": 0
+        }
+      },
+      "worker": {
+        "min_pool_size": {
+          "limit": 2
+        }
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {},
+      "valid_from": 0
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000000000000000ff00",
+  "entity_id": "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=",
+  "genesis": {
+    "state_root": "f7280a8e01698d2adb8eb0ab5e04bf507115b3c1ee8d6fa598904f0310699256",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 1,
+    "group_backup_size": 0,
+    "allowed_stragglers": 0,
+    "round_timeout": 5,
+    "max_messages": 32
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 10000,
+    "max_batch_size_bytes": 16777216,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 1000,
+    "checkpoint_num_kept": 5,
+    "checkpoint_chunk_size": 16777216
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=": {}
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "min_pool_size": {
+          "limit": 0
+        }
+      },
+      "worker": {
+        "min_pool_size": {
+          "limit": 1
+        }
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {},
+      "valid_from": 0
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "00000000000000000000000000000000000070617263656c70726f6400000000",
+  "entity_id": "LLx3nfHQQZtNdZRBnVkvZzRw4Ws2AA4poIDwx+IkxVs=",
+  "genesis": {
+    "state_root": "e4004e3a88fac68b005651a87c77862edf13441369673d5f3712238203a8661f",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 2,
+    "group_backup_size": 1,
+    "allowed_stragglers": 0,
+    "round_timeout": 5,
+    "max_messages": 32
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 1000,
+    "max_batch_size_bytes": 16777216,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 10000,
+    "checkpoint_num_kept": 2,
+    "checkpoint_chunk_size": 8388608
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "LLx3nfHQQZtNdZRBnVkvZzRw4Ws2AA4poIDwx+IkxVs=": {}
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {},
+      "valid_from": 0
+    }
+  ]
+}
+{
+  "v": 3,
+  "id": "000000000000000000000000000000000000000000000000000000000000ff02",
+  "entity_id": "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=",
+  "genesis": {
+    "state_root": "71026b93514f1812f31846a247a244d6b55197b465a8fb6d6c4326332d2e5bf0",
+    "round": 0
+  },
+  "kind": 1,
+  "tee_hardware": 0,
+  "executor": {
+    "group_size": 1,
+    "group_backup_size": 0,
+    "allowed_stragglers": 0,
+    "round_timeout": 5,
+    "max_messages": 32
+  },
+  "txn_scheduler": {
+    "batch_flush_timeout": 1000000000,
+    "max_batch_size": 10000,
+    "max_batch_size_bytes": 16777216,
+    "propose_batch_timeout": 5000000000
+  },
+  "storage": {
+    "checkpoint_interval": 1000,
+    "checkpoint_num_kept": 5,
+    "checkpoint_chunk_size": 16777216
+  },
+  "admission_policy": {
+    "entity_whitelist": {
+      "entities": {
+        "RDCyARTIdpiG75L9vVXAYIhRCToSrchZkv3JUW3Pji8=": {},
+        "UC0Aaa2Czc25G5+X2HOio6H0wQuBJR550chCE2kieN0=": {}
+      }
+    }
+  },
+  "constraints": {
+    "executor": {
+      "backup-worker": {
+        "min_pool_size": {
+          "limit": 0
+        }
+      },
+      "worker": {
+        "min_pool_size": {
+          "limit": 1
+        }
+      }
+    }
+  },
+  "staking": {
+    "min_in_message_fee": "0"
+  },
+  "governance_model": "entity",
+  "deployments": [
+    {
+      "version": {},
+      "valid_from": 0
+    }
+  ]
+}
