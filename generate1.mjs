@@ -715,8 +715,8 @@ try {
   console.log('error', err)
 }
 `
-  fs.writeFileSync('output/'+fnName+'.js', fileContent, 'utf-8')
+  fs.writeFileSync('output-grpc/'+fnName+'.js', fileContent, 'utf-8')
 
-  console.log('node output/'+fnName+'.js >> output/'+fnName+'.js')
+  console.log('node output-grpc/'+fnName+'.js >> output-grpc/'+fnName+'.js')
 }
 
