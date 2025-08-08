@@ -1,0 +1,546 @@
+
+======= @openzeppelin/contracts/interfaces/draft-IERC6093.sol:IERC1155Errors =======
+Function signatures:
+
+Error signatures:
+03dee4c5 A97kxQ==: ERC1155InsufficientBalance(address,uint256,uint256,uint256)
+3e31884e PjGITg==: ERC1155InvalidApprover(address)
+5b059991 WwWZkQ==: ERC1155InvalidArrayLength(uint256,uint256)
+ced3e100 ztPhAA==: ERC1155InvalidOperator(address)
+57f447ce V/RHzg==: ERC1155InvalidReceiver(address)
+01a83514 Aag1FA==: ERC1155InvalidSender(address)
+e237d922 4jfZIg==: ERC1155MissingApprovalForAll(address,address)
+
+======= @openzeppelin/contracts/interfaces/draft-IERC6093.sol:IERC20Errors =======
+Function signatures:
+
+Error signatures:
+fb8f41b2 +49Bsg==: ERC20InsufficientAllowance(address,uint256,uint256)
+e450d38c 5FDTjA==: ERC20InsufficientBalance(address,uint256,uint256)
+e602df05 5gLfBQ==: ERC20InvalidApprover(address)
+ec442f05 7EQvBQ==: ERC20InvalidReceiver(address)
+96c6fd1e lsb9Hg==: ERC20InvalidSender(address)
+94280d62 lCgNYg==: ERC20InvalidSpender(address)
+
+======= @openzeppelin/contracts/interfaces/draft-IERC6093.sol:IERC721Errors =======
+Function signatures:
+
+Error signatures:
+64283d7b ZCg9ew==: ERC721IncorrectOwner(address,uint256,address)
+177e802f F36ALw==: ERC721InsufficientApproval(address,uint256)
+a9fbf51f qfv1Hw==: ERC721InvalidApprover(address)
+5b08ba18 Wwi6GA==: ERC721InvalidOperator(address)
+89c62b64 icYrZA==: ERC721InvalidOwner(address)
+64a0ae92 ZKCukg==: ERC721InvalidReceiver(address)
+73c6ac6e c8asbg==: ERC721InvalidSender(address)
+7e273289 ficyiQ==: ERC721NonexistentToken(uint256)
+
+======= @openzeppelin/contracts/token/ERC20/ERC20.sol:ERC20 =======
+Function signatures:
+dd62ed3e 3WLtPg==: allowance(address,address)
+095ea7b3 CV6nsw==: approve(address,uint256)
+70a08231 cKCCMQ==: balanceOf(address)
+313ce567 MTzlZw==: decimals()
+06fdde03 Bv3eAw==: name()
+95d89b41 ldibQQ==: symbol()
+18160ddd GBYN3Q==: totalSupply()
+a9059cbb qQWcuw==: transfer(address,uint256)
+23b872dd I7hy3Q==: transferFrom(address,address,uint256)
+
+Error signatures:
+fb8f41b2 +49Bsg==: ERC20InsufficientAllowance(address,uint256,uint256)
+e450d38c 5FDTjA==: ERC20InsufficientBalance(address,uint256,uint256)
+e602df05 5gLfBQ==: ERC20InvalidApprover(address)
+ec442f05 7EQvBQ==: ERC20InvalidReceiver(address)
+96c6fd1e lsb9Hg==: ERC20InvalidSender(address)
+94280d62 lCgNYg==: ERC20InvalidSpender(address)
+
+Event signatures:
+8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925 jFvh5evsfVvRT3FCfR6E890DFMD3sikeWyAKyMfDuSU=: Approval(address,address,uint256)
+ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef 3fJSrRviyJtpwrBo/DeNqpUrp/FjxKEWKPVaTfUjs+8=: Transfer(address,address,uint256)
+
+======= @openzeppelin/contracts/token/ERC20/IERC20.sol:IERC20 =======
+Function signatures:
+dd62ed3e 3WLtPg==: allowance(address,address)
+095ea7b3 CV6nsw==: approve(address,uint256)
+70a08231 cKCCMQ==: balanceOf(address)
+18160ddd GBYN3Q==: totalSupply()
+a9059cbb qQWcuw==: transfer(address,uint256)
+23b872dd I7hy3Q==: transferFrom(address,address,uint256)
+
+Event signatures:
+8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925 jFvh5evsfVvRT3FCfR6E890DFMD3sikeWyAKyMfDuSU=: Approval(address,address,uint256)
+ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef 3fJSrRviyJtpwrBo/DeNqpUrp/FjxKEWKPVaTfUjs+8=: Transfer(address,address,uint256)
+
+======= @openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol:ERC20Burnable =======
+Function signatures:
+dd62ed3e 3WLtPg==: allowance(address,address)
+095ea7b3 CV6nsw==: approve(address,uint256)
+70a08231 cKCCMQ==: balanceOf(address)
+42966c68 QpZsaA==: burn(uint256)
+79cc6790 ecxnkA==: burnFrom(address,uint256)
+313ce567 MTzlZw==: decimals()
+06fdde03 Bv3eAw==: name()
+95d89b41 ldibQQ==: symbol()
+18160ddd GBYN3Q==: totalSupply()
+a9059cbb qQWcuw==: transfer(address,uint256)
+23b872dd I7hy3Q==: transferFrom(address,address,uint256)
+
+Error signatures:
+fb8f41b2 +49Bsg==: ERC20InsufficientAllowance(address,uint256,uint256)
+e450d38c 5FDTjA==: ERC20InsufficientBalance(address,uint256,uint256)
+e602df05 5gLfBQ==: ERC20InvalidApprover(address)
+ec442f05 7EQvBQ==: ERC20InvalidReceiver(address)
+96c6fd1e lsb9Hg==: ERC20InvalidSender(address)
+94280d62 lCgNYg==: ERC20InvalidSpender(address)
+
+Event signatures:
+8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925 jFvh5evsfVvRT3FCfR6E890DFMD3sikeWyAKyMfDuSU=: Approval(address,address,uint256)
+ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef 3fJSrRviyJtpwrBo/DeNqpUrp/FjxKEWKPVaTfUjs+8=: Transfer(address,address,uint256)
+
+======= @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol:IERC20Metadata =======
+Function signatures:
+dd62ed3e 3WLtPg==: allowance(address,address)
+095ea7b3 CV6nsw==: approve(address,uint256)
+70a08231 cKCCMQ==: balanceOf(address)
+313ce567 MTzlZw==: decimals()
+06fdde03 Bv3eAw==: name()
+95d89b41 ldibQQ==: symbol()
+18160ddd GBYN3Q==: totalSupply()
+a9059cbb qQWcuw==: transfer(address,uint256)
+23b872dd I7hy3Q==: transferFrom(address,address,uint256)
+
+Event signatures:
+8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925 jFvh5evsfVvRT3FCfR6E890DFMD3sikeWyAKyMfDuSU=: Approval(address,address,uint256)
+ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef 3fJSrRviyJtpwrBo/DeNqpUrp/FjxKEWKPVaTfUjs+8=: Transfer(address,address,uint256)
+
+======= @openzeppelin/contracts/utils/Context.sol:Context =======
+Function signatures:
+
+======= @openzeppelin/contracts/utils/Panic.sol:Panic =======
+Function signatures:
+
+======= @openzeppelin/contracts/utils/Strings.sol:Strings =======
+Function signatures:
+
+Error signatures:
+e22e27eb 4i4n6w==: StringsInsufficientHexLength(uint256,uint256)
+1d15ae44 HRWuRA==: StringsInvalidAddressFormat()
+94e2737e lOJzfg==: StringsInvalidChar()
+
+======= @openzeppelin/contracts/utils/math/Math.sol:Math =======
+Function signatures:
+
+======= @openzeppelin/contracts/utils/math/SafeCast.sol:SafeCast =======
+Function signatures:
+
+Error signatures:
+327269a7 MnJppw==: SafeCastOverflowedIntDowncast(uint8,int256)
+a8ce4432 qM5EMg==: SafeCastOverflowedIntToUint(int256)
+6dfcc650 bfzGUA==: SafeCastOverflowedUintDowncast(uint8,uint256)
+24775e06 JHdeBg==: SafeCastOverflowedUintToInt(uint256)
+
+======= @openzeppelin/contracts/utils/math/SignedMath.sol:SignedMath =======
+Function signatures:
+
+======= contracts/contracts/ConsensusUtils.sol:ConsensusUtils =======
+Function signatures:
+
+======= contracts/contracts/DateTime.sol:DateTime =======
+Function signatures:
+
+======= contracts/contracts/EIP1559Signer.sol:EIP1559Signer =======
+Function signatures:
+
+======= contracts/contracts/EIP155Signer.sol:EIP155Signer =======
+Function signatures:
+
+======= contracts/contracts/EIP2930Signer.sol:EIP2930Signer =======
+Function signatures:
+
+======= contracts/contracts/EIPTypes.sol:EIPTypes =======
+Function signatures:
+
+======= contracts/contracts/EthereumUtils.sol:EthereumUtils =======
+Function signatures:
+
+Error signatures:
+86cd05c5 hs0FxQ==: DER_Split_Error()
+102875ed ECh17Q==: expmod_Error()
+c88d458a yI1Fig==: k256Decompress_Invalid_Length_Error()
+ab4be041 q0vgQQ==: k256DeriveY_Invalid_Prefix_Error()
+4532600d RTJgDQ==: recoverV_Error()
+
+======= contracts/contracts/RLPWriter.sol:RLPWriter =======
+Function signatures:
+
+======= contracts/contracts/Sapphire.sol:Sapphire =======
+Function signatures:
+
+======= contracts/contracts/SiweParser.sol:SiweParser =======
+Function signatures:
+
+Error signatures:
+acf86969 rPhpaQ==: SiweParser_InvalidAddressLength()
+b4bc030c tLwDDA==: SiweParser_InvalidNonce()
+
+======= contracts/contracts/Subcall.sol:Subcall =======
+Function signatures:
+
+Error signatures:
+58a4f6ac WKT2rA==: AccountsTransferError(uint64,string)
+4c8658e0 TIZY4A==: ConsensusDelegateError(uint64,string)
+8927158d iScVjQ==: ConsensusTakeReceiptError(uint64,string)
+11956ab5 EZVqtQ==: ConsensusUndelegateError(uint64,string)
+72cc5e62 csxeYg==: ConsensusWithdrawError(uint64,string)
+56401e8e VkAejg==: CoreCallDataPublicKeyError(uint64)
+ccf5bf2a zPW/Kg==: CoreCurrentEpochError(uint64)
+d854bdc0 2FS9wA==: IncompleteParse()
+64f78729 ZPeHKQ==: InvalidReceiptId()
+6daf24f7 ba8k9w==: MissingKey()
+2fb0ba59 L7C6WQ==: ParseReceiptError(uint64)
+6890282f aJAoLw==: RoflOriginNotAuthorizedForApp()
+902e94f8 kC6U+A==: SubcallError()
+e9990892 6ZkIkg==: TakeReceiptKindOutOfRange(uint256)
+1a83db80 GoPbgA==: TokenNameTooLong()
+1d204f99 HSBPmQ==: WrongMapSizeError()
+
+======= contracts/contracts/WrappedROSE.sol:WrappedROSE =======
+Function signatures:
+dd62ed3e 3WLtPg==: allowance(address,address)
+095ea7b3 CV6nsw==: approve(address,uint256)
+70a08231 cKCCMQ==: balanceOf(address)
+42966c68 QpZsaA==: burn(uint256)
+79cc6790 ecxnkA==: burnFrom(address,uint256)
+313ce567 MTzlZw==: decimals()
+d0e30db0 0OMNsA==: deposit()
+06fdde03 Bv3eAw==: name()
+95d89b41 ldibQQ==: symbol()
+18160ddd GBYN3Q==: totalSupply()
+a9059cbb qQWcuw==: transfer(address,uint256)
+23b872dd I7hy3Q==: transferFrom(address,address,uint256)
+2e1a7d4d Lhp9TQ==: withdraw(uint256)
+
+Error signatures:
+fb8f41b2 +49Bsg==: ERC20InsufficientAllowance(address,uint256,uint256)
+e450d38c 5FDTjA==: ERC20InsufficientBalance(address,uint256,uint256)
+e602df05 5gLfBQ==: ERC20InvalidApprover(address)
+ec442f05 7EQvBQ==: ERC20InvalidReceiver(address)
+96c6fd1e lsb9Hg==: ERC20InvalidSender(address)
+94280d62 lCgNYg==: ERC20InvalidSpender(address)
+
+Event signatures:
+8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925 jFvh5evsfVvRT3FCfR6E890DFMD3sikeWyAKyMfDuSU=: Approval(address,address,uint256)
+e1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c 4f/8xJI9BLVZ9NKai/xs2gTrWw08RgdRwkAsXFzJEJw=: Deposit(address,uint256)
+ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef 3fJSrRviyJtpwrBo/DeNqpUrp/FjxKEWKPVaTfUjs+8=: Transfer(address,address,uint256)
+7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65 f89TLBXwptsL1tDgOL6nHTDYCMfZjLO/cmipW/UIG2U=: Withdrawal(address,uint256)
+
+======= contracts/contracts/auth/A13e.sol:A13e =======
+Function signatures:
+7f476b6f f0drbw==: login(string,(bytes32,bytes32,uint256))
+
+Error signatures:
+9ea67848 nqZ4SA==: A13e_RevokedAuthToken()
+
+======= contracts/contracts/auth/SiweAuth.sol:SiweAuth =======
+Function signatures:
+c2fb26a6 wvsmpg==: domain()
+7f476b6f f0drbw==: login(string,(bytes32,bytes32,uint256))
+
+Error signatures:
+9ea67848 nqZ4SA==: A13e_RevokedAuthToken()
+05cc02e1 BcwC4Q==: SiweAuth_AddressMismatch()
+362c8337 NiyDNw==: SiweAuth_ChainIdMismatch()
+283d62bd KD1ivQ==: SiweAuth_DomainMismatch()
+b1711550 sXEVUA==: SiweAuth_Expired()
+299d02f1 KZ0C8Q==: SiweAuth_NotBeforeInFuture()
+acf86969 rPhpaQ==: SiweParser_InvalidAddressLength()
+b4bc030c tLwDDA==: SiweParser_InvalidNonce()
+
+======= contracts/contracts/opl/Enclave.sol:Enclave =======
+Function signatures:
+9c649fdf nGSf3w==: executeMessage(address,uint64,bytes,address)
+
+Error signatures:
+11e9f924 Een5JA==: AutoConfigUnavailable()
+5f9997df X5mX3w==: MissingRemoteAddr()
+a9e22230 qeIiMA==: MissingRemoteChainId()
+dbf02d7c 2/AtfA==: SelfCallDisallowed()
+
+======= contracts/contracts/opl/Endpoint.sol:BaseEndpoint =======
+Function signatures:
+9c649fdf nGSf3w==: executeMessage(address,uint64,bytes,address)
+
+Error signatures:
+5f9997df X5mX3w==: MissingRemoteAddr()
+a9e22230 qeIiMA==: MissingRemoteChainId()
+dbf02d7c 2/AtfA==: SelfCallDisallowed()
+
+======= contracts/contracts/opl/Endpoint.sol:Endpoint =======
+Function signatures:
+9c649fdf nGSf3w==: executeMessage(address,uint64,bytes,address)
+
+Error signatures:
+11e9f924 Een5JA==: AutoConfigUnavailable()
+5f9997df X5mX3w==: MissingRemoteAddr()
+a9e22230 qeIiMA==: MissingRemoteChainId()
+dbf02d7c 2/AtfA==: SelfCallDisallowed()
+
+======= contracts/contracts/opl/Endpoint.sol:ICelerMessageBus =======
+Function signatures:
+95e911a8 lekRqA==: feeBase()
+f60bbe2a 9gu+Kg==: feePerByte()
+9f3ce55a nzzlWg==: sendMessage(address,uint256,bytes)
+
+======= contracts/contracts/opl/Host.sol:Host =======
+Function signatures:
+9c649fdf nGSf3w==: executeMessage(address,uint64,bytes,address)
+
+Error signatures:
+11e9f924 Een5JA==: AutoConfigUnavailable()
+5f9997df X5mX3w==: MissingRemoteAddr()
+a9e22230 qeIiMA==: MissingRemoteChainId()
+dbf02d7c 2/AtfA==: SelfCallDisallowed()
+
+======= contracts/contracts/tests/DateTimeTests.sol:DateTimeTests =======
+Function signatures:
+b719d785 txnXhQ==: testIsLeapYear(uint16)
+cfd12100 z9EhAA==: testToTimestamp(uint16,uint8,uint8,uint8,uint8,uint8)
+
+======= contracts/contracts/tests/EIP155Tests.sol:EIP155Tests =======
+Function signatures:
+68df392f aN85Lw==: emitChainId()
+54353f2f VDU/Lw==: example()
+3408e470 NAjkcA==: getChainId()
+1536fbf3 FTb78w==: publicAddr()
+3a2077fa OiB3+g==: secretKey()
+e156a967 4VapZw==: sign((uint64,uint256,uint64,address,uint256,bytes,uint256))
+c53f15dc xT8V3A==: signWithSecret((uint64,uint256,uint64,address,uint256,bytes,uint256),address,bytes32)
+
+Error signatures:
+86cd05c5 hs0FxQ==: DER_Split_Error()
+102875ed ECh17Q==: expmod_Error()
+c88d458a yI1Fig==: k256Decompress_Invalid_Length_Error()
+ab4be041 q0vgQQ==: k256DeriveY_Invalid_Prefix_Error()
+4532600d RTJgDQ==: recoverV_Error()
+
+Event signatures:
+6c38879164a9c2b8a90c3327077992e49f606ed86a8c321e65e121dd824e735f bDiHkWSpwripDDMnB3mS5J9gbthqjDIeZeEh3YJOc18=: ExampleEvent(bytes32)
+63882ab535c539e01e86899ea430f7c0b9209beceadbf0b28ca943c42ad2110c Y4gqtTXFOeAehomepDD3wLkgm+zq2/CyjKlDxCrSEQw=: HasChainId(uint256)
+
+======= contracts/contracts/tests/EIPTests.sol:EIPTests =======
+Function signatures:
+55eda06e Ve2gbg==: SECRET_KEY()
+ca09760e ygl2Dg==: SENDER_ADDRESS()
+68df392f aN85Lw==: emitChainId()
+54353f2f VDU/Lw==: example()
+3408e470 NAjkcA==: getChainId()
+b02b2242 sCsiQg==: getStorageSlots()
+958b588c lYtYjA==: signEIP1559((uint64,uint256,uint256,uint64,address,uint256,bytes,((address,bytes32[])[]),uint256))
+b992e1b9 uZLhuQ==: signEIP1559WithSecret((uint64,uint256,uint256,uint64,address,uint256,bytes,((address,bytes32[])[]),uint256),address,bytes32)
+00f3274e APMnTg==: signEIP2930((uint64,uint256,uint64,address,uint256,bytes,((address,bytes32[])[]),uint256))
+dcef9926 3O+ZJg==: signEIP2930WithSecret((uint64,uint256,uint64,address,uint256,bytes,((address,bytes32[])[]),uint256),address,bytes32)
+d19356f5 0ZNW9Q==: storedBytes1()
+5b07c279 WwfCeQ==: storedBytes2()
+63254717 YyVHFw==: storedNumber1()
+bcd08d64 vNCNZA==: storedNumber2()
+
+Error signatures:
+86cd05c5 hs0FxQ==: DER_Split_Error()
+102875ed ECh17Q==: expmod_Error()
+c88d458a yI1Fig==: k256Decompress_Invalid_Length_Error()
+ab4be041 q0vgQQ==: k256DeriveY_Invalid_Prefix_Error()
+4532600d RTJgDQ==: recoverV_Error()
+
+Event signatures:
+6c38879164a9c2b8a90c3327077992e49f606ed86a8c321e65e121dd824e735f bDiHkWSpwripDDMnB3mS5J9gbthqjDIeZeEh3YJOc18=: ExampleEvent(bytes32)
+63882ab535c539e01e86899ea430f7c0b9209beceadbf0b28ca943c42ad2110c Y4gqtTXFOeAehomepDD3wLkgm+zq2/CyjKlDxCrSEQw=: HasChainId(uint256)
+
+======= contracts/contracts/tests/Gas.sol:GasTests =======
+Function signatures:
+991b8da8 mRuNqA==: testConstantTime(uint256,uint128)
+b518a776 tRindg==: tmp()
+
+======= contracts/contracts/tests/HashTests.sol:HashTests =======
+Function signatures:
+8ee65e46 juZeRg==: testHMAC_SHA512_256(bytes,bytes)
+f89f7569 +J91aQ==: testSHA384(bytes)
+f46b7649 9Gt2SQ==: testSHA512(bytes)
+a44144ef pEFE7w==: testSHA512_256(bytes)
+
+Error signatures:
+cd11c437 zRHENw==: hmac_sha512_256_memcpy()
+
+======= contracts/contracts/tests/Omnibus.sol:Omnibus =======
+Function signatures:
+7c5f64f8 fF9k+A==: ERROR_NUM()
+987426a6 mHQmpg==: setSomevar(uint256)
+828e5fe8 go5f6A==: somevar()
+9cc065b0 nMBlsA==: testCustomRevert()
+dcbaab5e 3LqrXg==: testCustomViewRevert()
+a26388bb omOIuw==: testRevert()
+252af808 JSr4CA==: testSignedQueries()
+231985d4 IxmF1A==: testViewLength(uint256)
+bface099 v6zgmQ==: testViewRevert()
+
+Error signatures:
+110b3655 EQs2VQ==: CustomError(uint256)
+
+======= contracts/contracts/tests/SemanticTests.sol:SemanticTests =======
+Function signatures:
+7c5f64f8 fF9k+A==: ERROR_NUM()
+9cc065b0 nMBlsA==: testCustomRevert()
+dcbaab5e 3LqrXg==: testCustomViewRevert()
+a26388bb omOIuw==: testRevert()
+231985d4 IxmF1A==: testViewLength(uint256)
+bface099 v6zgmQ==: testViewRevert()
+
+Error signatures:
+110b3655 EQs2VQ==: CustomError(uint256)
+
+======= contracts/contracts/tests/SignedQueriesTests.sol:SignedQueriesTests =======
+Function signatures:
+252af808 JSr4CA==: testSignedQueries()
+
+======= contracts/contracts/tests/SigningTests.sol:SigningTests =======
+Function signatures:
+fc024fec /AJP7A==: testEthereum(bytes,bytes32)
+e65b48f1 5ltI8Q==: testKeygen(uint8,bytes)
+4314a18c QxShjA==: testSign(uint8,bytes,bytes,bytes)
+d0b497b4 0LSXtA==: testVerify(uint8,bytes,bytes,bytes,bytes)
+
+Error signatures:
+86cd05c5 hs0FxQ==: DER_Split_Error()
+102875ed ECh17Q==: expmod_Error()
+c88d458a yI1Fig==: k256Decompress_Invalid_Length_Error()
+ab4be041 q0vgQQ==: k256DeriveY_Invalid_Prefix_Error()
+4532600d RTJgDQ==: recoverV_Error()
+
+======= contracts/contracts/tests/SiweParserTests.sol:SiweParserTests =======
+Function signatures:
+e92d1c51 6S0cUQ==: testFromHexChar(uint8)
+03f54200 A/VCAA==: testHexStringToAddress(bytes)
+c389ed06 w4ntBg==: testParseArray(bytes,uint256)
+0f9a77ac D5p3rA==: testParseField(bytes,string,uint256)
+761a5f98 dhpfmA==: testParseSiweMsg(bytes)
+86256711 hiVnEQ==: testParseUint(bytes)
+50695001 UGlQAQ==: testSubstr(bytes,uint256,uint256)
+746bb767 dGu3Zw==: testTimestampFromIso(bytes)
+
+Error signatures:
+acf86969 rPhpaQ==: SiweParser_InvalidAddressLength()
+b4bc030c tLwDDA==: SiweParser_InvalidNonce()
+
+======= contracts/contracts/tests/SubcallTests.sol:SubcallTests =======
+Function signatures:
+6c843e93 bIQ+kw==: generateRandomAddress()
+fa93efc4 +pPvxA==: testAccountsTransfer(address,uint128)
+3dcbbe30 Pcu+MA==: testConsensusDelegate(bytes21,uint128)
+2210d061 IhDQYQ==: testConsensusDelegateWithReceipt(bytes21,uint128,uint64)
+a12efc02 oS78Ag==: testConsensusUndelegate(bytes21,uint128)
+bd871f68 vYcfaA==: testConsensusUndelegateWithReceipt(bytes21,uint128,uint64)
+3b981f76 O5gfdg==: testConsensusWithdraw(bytes21,uint128)
+9ac9b0db msmw2w==: testCoreCallDataPublicKey()
+55f8e9d2 Vfjp0g==: testCoreCurrentEpoch()
+6693f81a ZpP4Gg==: testDecodeReceiptDelegate(bytes)
+f55a03e3 9VoD4w==: testDecodeReceiptUndelegateDone(bytes)
+74e400f9 dOQA+Q==: testDecodeReceiptUndelegateStart(bytes)
+324a93cb MkqTyw==: testParseCallDataPublicKey(bytes)
+e40a9258 5AqSWA==: testRoflEnsureAuthorizedOrigin(bytes21)
+f08fd40d 8I/UDQ==: testSubcall(string,bytes)
+cc7fcbb0 zH/LsA==: testTakeReceipt(uint8,uint64)
+
+Error signatures:
+58a4f6ac WKT2rA==: AccountsTransferError(uint64,string)
+f5e1d232 9eHSMg==: CBOR_Error_BufferOverrun(uint256,uint256,uint256)
+857a6f96 hXpvlg==: CBOR_Error_ValueOutOfRange(uint256,uint256)
+c75cd840 x1zYQA==: CBOR_InvalidKey()
+f28b0fc3 8osPww==: CBOR_InvalidLength(uint256)
+f3b0ca70 87DKcA==: CBOR_InvalidMap()
+f98df29d +Y3ynQ==: CBOR_InvalidUintPrefix(uint8)
+65e2dc5e ZeLcXg==: CBOR_InvalidUintSize(uint8)
+4c8658e0 TIZY4A==: ConsensusDelegateError(uint64,string)
+8927158d iScVjQ==: ConsensusTakeReceiptError(uint64,string)
+11956ab5 EZVqtQ==: ConsensusUndelegateError(uint64,string)
+72cc5e62 csxeYg==: ConsensusWithdrawError(uint64,string)
+56401e8e VkAejg==: CoreCallDataPublicKeyError(uint64)
+ccf5bf2a zPW/Kg==: CoreCurrentEpochError(uint64)
+d854bdc0 2FS9wA==: IncompleteParse()
+64f78729 ZPeHKQ==: InvalidReceiptId()
+6daf24f7 ba8k9w==: MissingKey()
+2fb0ba59 L7C6WQ==: ParseReceiptError(uint64)
+6890282f aJAoLw==: RoflOriginNotAuthorizedForApp()
+902e94f8 kC6U+A==: SubcallError()
+e9990892 6ZkIkg==: TakeReceiptKindOutOfRange(uint256)
+1a83db80 GoPbgA==: TokenNameTooLong()
+1d204f99 HSBPmQ==: WrongMapSizeError()
+
+Event signatures:
+2998af603d4138d8d30ad10ac8abb2952acb392ec909c86ad70c53b3944935df KZivYD1BONjTCtEKyKuylSrLOS7JCchq1wxTs5RJNd8=: RawResult(uint64,bytes)
+5ab64fb87e623978177884a091a88f5cf71a28fe2bf49ed1dc74330de1b26338 WrZPuH5iOXgXeISgkaiPXPcaKP4r9J7R3HQzDeGyYzg=: Result(bytes)
+c489ef2ea74bbd78e384f3fd2efa37d63e81ae68e149a80182bf24db1ad3a2c6 xInvLqdLvXjjhPP9Lvo31j6BrmjhSagBgr8k2xrTosY=: SubcallResult(uint64,bytes)
+
+======= contracts/contracts/tests/TestCBOR.sol:TestCBOR =======
+Function signatures:
+f4a531a1 9KUxoQ==: testBytesEncoding(bytes)
+ecc4b8ad 7MS4rQ==: testParseUint(bytes,uint256)
+f29ceefb 8pzu+w==: testUintEncoding(uint256)
+91046adf kQRq3w==: testUintRoundtrip(uint256)
+
+Error signatures:
+f5e1d232 9eHSMg==: CBOR_Error_BufferOverrun(uint256,uint256,uint256)
+9740752b l0B1Kw==: CBOR_Error_BytesTooLong(uint256)
+f28b0fc3 8osPww==: CBOR_InvalidLength(uint256)
+f98df29d +Y3ynQ==: CBOR_InvalidUintPrefix(uint8)
+65e2dc5e ZeLcXg==: CBOR_InvalidUintSize(uint8)
+
+======= contracts/contracts/tests/TestCalldataEncryption.sol:TestCalldataEncryption =======
+Function signatures:
+c9dd6070 yd1gcA==: example(bytes)
+a3a86992 o6hpkg==: makeExampleCall(bytes,uint64,uint256,uint64,address,bytes32)
+6bb20793 a7IHkw==: testEncryptCallData(bytes,bytes32,bytes32,bytes15,uint256,bytes32)
+
+Error signatures:
+f5e1d232 9eHSMg==: CBOR_Error_BufferOverrun(uint256,uint256,uint256)
+9740752b l0B1Kw==: CBOR_Error_BytesTooLong(uint256)
+c75cd840 x1zYQA==: CBOR_InvalidKey()
+f28b0fc3 8osPww==: CBOR_InvalidLength(uint256)
+f3b0ca70 87DKcA==: CBOR_InvalidMap()
+f98df29d +Y3ynQ==: CBOR_InvalidUintPrefix(uint8)
+65e2dc5e ZeLcXg==: CBOR_InvalidUintSize(uint8)
+56401e8e VkAejg==: CoreCallDataPublicKeyError(uint64)
+86cd05c5 hs0FxQ==: DER_Split_Error()
+902e94f8 kC6U+A==: SubcallError()
+4532600d RTJgDQ==: recoverV_Error()
+
+Event signatures:
+974ff428610a9550275c1792cd36d07ae1264a5671c40882499008db3c333430 l0/0KGEKlVAnXBeSzTbQeuEmSlZxxAiCSZAI2zwzNDA=: ExampleEvent(bytes)
+
+======= contracts/contracts/tests/auth/SiweAuthTests.sol:SiweAuthTests =======
+Function signatures:
+2f576f20 L1dvIA==: doNothing()
+c2fb26a6 wvsmpg==: domain()
+7f476b6f f0drbw==: login(string,(bytes32,bytes32,uint256))
+e5eab096 5eqwlg==: setDomain(string)
+e7077de6 5wd95g==: testAuthMsgSender(bytes)
+8258afb7 glivtw==: testGetResources(bytes)
+b905e802 uQXoAg==: testGetStatement(bytes)
+e3ba5dd9 47pd2Q==: testHasResourceAccess(bytes,string)
+5a226741 WiJnQQ==: testLogin(string,(bytes32,bytes32,uint256))
+f598ccd8 9ZjM2A==: testRevokeAuthToken(bytes32)
+8ffef02c j/7wLA==: testStatementVerification(bytes,string)
+2257d3ca IlfTyg==: testVerySecretMessage(bytes)
+
+Error signatures:
+9ea67848 nqZ4SA==: A13e_RevokedAuthToken()
+05cc02e1 BcwC4Q==: SiweAuth_AddressMismatch()
+362c8337 NiyDNw==: SiweAuth_ChainIdMismatch()
+283d62bd KD1ivQ==: SiweAuth_DomainMismatch()
+b1711550 sXEVUA==: SiweAuth_Expired()
+299d02f1 KZ0C8Q==: SiweAuth_NotBeforeInFuture()
+acf86969 rPhpaQ==: SiweParser_InvalidAddressLength()
+b4bc030c tLwDDA==: SiweParser_InvalidNonce()
+
+======= contracts/node_modules/hardhat/console.sol:console =======
+Function signatures:
+
